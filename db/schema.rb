@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161221210540) do
+ActiveRecord::Schema.define(version: 20161222210829) do
 
   create_table "mangs", force: :cascade do |t|
     t.string   "email"
@@ -54,6 +54,15 @@ ActiveRecord::Schema.define(version: 20161221210540) do
     t.datetime "updated_at",    null: false
   end
 
+  create_table "roles", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "active_status"
+    t.integer  "sort"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "encrypted_password",          default: "", null: false
@@ -80,10 +89,12 @@ ActiveRecord::Schema.define(version: 20161221210540) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "favorite_color"
+    t.integer  "role_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["role_id"], name: "index_users_on_role_id"
   add_index "users", ["uid"], name: "index_users_on_uid", unique: true
 
 end
