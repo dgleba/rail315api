@@ -52,3 +52,7 @@ gem "pry-remote", group: :development
 
 # heroku
 gem 'rails_12factor', group: :production
+gem 'faker'
+gem 'populator'
+gem 'thor', '0.19.1'
+# 
