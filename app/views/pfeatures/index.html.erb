@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pfeatures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Fdate</th>
+      <th>Active status</th>
+      <th>Sort</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pfeatures.each do |pfeature| %>
+      <tr>
+        <td><%= pfeature.name %></td>
+        <td><%= pfeature.fdate %></td>
+        <td><%= pfeature.active_status %></td>
+        <td><%= pfeature.sort %></td>
+        <td><%= link_to 'Show', pfeature %></td>
+        <td><%= link_to 'Edit', edit_pfeature_path(pfeature) %></td>
+        <td><%= link_to 'Destroy', pfeature, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pfeature', new_pfeature_path %>
