@@ -5,8 +5,8 @@ class Ability
 
     if user.lr_admin?
       can :manage, :all
-      can :access, :rails_admin       # only allow admin users to access Rails Admin
-      can :dashboard                  # allow access to dashboard
+      # can :access, :rails_admin       # only allow admin users to access Rails Admin
+      # can :dashboard                  # allow access to dashboard
 
     # remember to add roles to user.rb
     #
@@ -15,6 +15,7 @@ class Ability
 
     elsif user.lr_regular?
       can :read, [ Role, User]
+      can :index, [ Product ]
       
     elsif user.lr_readonly?
       can :read, Role
