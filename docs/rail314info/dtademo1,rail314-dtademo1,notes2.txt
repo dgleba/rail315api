@@ -1,0 +1,50 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]15-58PM
+
+rails g scaffold_controller User
+
+http://stackoverflow.com/questions/2504123/generate-a-controller-with-all-the-restful-functions
+
+
+-bash: cd: dt: No such file or directory
+albe@pmdsdata4:/srv/share/rail314-dta-again$ cd dtademo1/
+albe@pmdsdata4:/srv/share/rail314-dta-again/dtademo1$ rails g scaffold_controller User
+      create  app/controllers/users_controller.rb
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/index.html.erb
+      create    app/views/users/edit.html.erb
+      create    app/views/users/show.html.erb
+      create    app/views/users/new.html.erb
+      create    app/views/users/_form.html.erb
+      invoke  test_unit
+      create    test/controllers/users_controller_test.rb
+      invoke  helper
+      create    app/helpers/users_helper.rb
+      invoke    test_unit
+      invoke  jbuilder
+      create    app/views/users/index.json.jbuilder
+      create    app/views/users/show.json.jbuilder
+albe@pmdsdata4:/srv/share/rail314-dta-again/dtademo1$
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]16-04PM
+
+rails g scaffold Product name  pdate:datetime active_status:integer sort:integer -f
+
+migrate
+
+
+can see products in postman.
+works.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

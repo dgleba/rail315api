@@ -1,0 +1,191 @@
+{
+	"variables": [],
+	"info": {
+		"name": "206x",
+		"_postman_id": "31c4643f-cdef-b24d-4a83-0d69dad8a471",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://v206x2016103022:3001/auth",
+			"request": {
+				"url": "http://v206x2016103022:3001/demo/members_only",
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://v206x2016103022:3001/demo/members_only",
+			"request": {
+				"url": "http://v206x2016103022:3001/demo/members_only",
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://v206x2016103022:3001/products",
+			"request": {
+				"url": "http://v206x2016103022:3001/products.json",
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://v206x2016103022:3001/products delete",
+			"request": {
+				"url": "http://v206x2016103022:3001/products/2.json",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

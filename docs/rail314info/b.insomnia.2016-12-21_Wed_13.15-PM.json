@@ -1,0 +1,235 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2016-12-21T18:14:56.207Z",
+	"__export_source": "insomnia.desktop.app:v4.0.9",
+	"resources": [
+		{
+			"_id": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"parentId": null,
+			"modified": 1482339833979,
+			"created": 1482339833979,
+			"name": "b",
+			"description": "",
+			"certificates": [],
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_df6ddcd834644f878f62754b2fd5583a",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482340092888,
+			"created": 1482340092888,
+			"name": "Base Environment",
+			"data": {},
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_12a2ac08953b48cfb101ff09c911dee1",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482344082584,
+			"created": 1482339898912,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2016-12-21T18:14:32.564Z",
+					"key": "_devise_token_auth_demo_session",
+					"value": "YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2",
+					"path": "/",
+					"httpOnly": true,
+					"hostOnly": true,
+					"domain": "pmdsdata4",
+					"lastAccessed": "2016-12-21T18:14:42.382Z"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_0820d9f6a4bd414897ba8ec24b7d6d94",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482343078686,
+			"created": 1482342889960,
+			"url": "http://pmdsdata4:3003/demo/members_only",
+			"name": "314  dtademo1 get3",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "Pw4LflJM_bZJ9Vlizv_asQ"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "",
+					"value": ""
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925711,
+			"_type": "request"
+		},
+		{
+			"_id": "req_5d3f07d211da466cb25e2010f426da08",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482344081171,
+			"created": 1482342431631,
+			"url": "http://pmdsdata4:3003/demo/members_only",
+			"name": "314  dtademo1 get",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "6asj1iT7gMNd5qhxcYqM6A"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "expiry",
+					"value": "1483553123",
+					"disabled": true
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "client",
+					"value": "0R9SqqEUMwDYYB09be2uCw"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925712,
+			"_type": "request"
+		},
+		{
+			"_id": "req_9a23da6d283840f98340335f81cd145c",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341461428,
+			"created": 1482339925714,
+			"url": "http://pmdsdata4:3003/auth",
+			"name": "314 dtademo1 su",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "passwordConfirmation",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "confirm_success_url",
+						"value": "/users"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925714,
+			"_type": "request"
+		},
+		{
+			"_id": "req_a9ad2d007d8f4084a234c3a24fb6272d",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482343327354,
+			"created": 1482343002629,
+			"url": "http://pmdsdata4:3003/demo/members_only",
+			"name": "314  dtademo1 get2",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "PkTx9KTDhtjazUczyr-9Ug"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "expiry",
+					"value": "1483552377",
+					"disabled": true
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "",
+					"value": ""
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925711,
+			"_type": "request"
+		},
+		{
+			"_id": "req_b2117bda5c5448178ea52ae7474e318f",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341467096,
+			"created": 1482340896280,
+			"url": "http://pmdsdata4:3003/auth/sign_in",
+			"name": "314  dtademo1 si",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "",
+						"value": ""
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925713,
+			"_type": "request"
+		}
+	]
+}

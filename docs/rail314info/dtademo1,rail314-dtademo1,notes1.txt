@@ -1,0 +1,308 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]09-51AM
+
+git clone https://github.com/lynndylanhurley/devise_token_auth_demo.git  dtademo1
+
+
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+bundle
+
+bundle exec rake db:migrate
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]09-57AM
+
+albe@pmdsdata4:/srv/share/rail314-dta-again/dtademo1$ bundle exec rake db:migrate
+rake aborted!
+Figaro::MissingKeys: Missing required configuration keys: ["GITHUB_KEY", "GITHUB_SECRET", "FACEBOOK_KEY", "FACEBOOK_SECRET", "GOOGLE_KEY", "GOOGLE_SECRET"]
+/srv/share/rail314-dta-again/dtademo1/config/initializers/figaro.rb:1:in `<top (required)>'
+/srv/share/rail314-dta-again/dtademo1/config/environment.rb:5:in `<top (required)>'
+/home/albe/.rbenv/versions/2.3.0/bin/bundle:23:in `load'
+/home/albe/.rbenv/versions/2.3.0/bin/bundle:23:in `<main>'
+Tasks: TOP => db:migrate => environment
+(See full trace by running task with --trace)
+albe@pmdsdata4:/srv/share/rail314-dta-again/dtademo1$
+
+ans.
+  edit application.yml
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]12-29PM
+
+turn off confirmable.
+
+Example: disable email confirmation
+
+Just list the devise modules that you want to include before including the DeviseTokenAuth::Concerns::User model concern.
+
+# app/models/user.rb
+class User < ActiveRecord::Base
+
+  # notice this comes BEFORE the include statement below
+  # also notice that :confirmable is not included in this block
+  devise :database_authenticatable, :recoverable,
+         :trackable, :validatable, :registerable,
+         :omniauthable
+
+  # note that this include statement comes AFTER the devise block above
+  include DeviseTokenAuth::Concerns::User
+end
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]12-30PM
+
+sign up
+
+		{
+			"_id": "req_9a23da6d283840f98340335f81cd145c",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341461428,
+			"created": 1482339925714,
+			"url": "http://pmdsdata4:3003/auth",
+			"name": "314 dtademo1 su",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "passwordConfirmation",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "confirm_success_url",
+						"value": "/users"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925714,
+			"_type": "request"
+		},
+
+    
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]12-33PM
+
+sign in
+
+
+		{
+			"_id": "req_b2117bda5c5448178ea52ae7474e318f",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341467096,
+			"created": 1482340896280,
+			"url": "http://pmdsdata4:3003/auth/sign_in",
+			"name": "314  dtademo1 si",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "",
+						"value": ""
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925713,
+			"_type": "request"
+		},
+		{
+			"_id": "env_9f21040783b64a0481b6d7002ede3d3d",
+			"parentId": "wrk_f85ce67a32d14f7e916d4f1221824a76",
+			"modified": 1482185180667,
+			"created": 1482185180667,
+			"name": "Base Environment",
+			"data": {},
+			"_type": "environment"
+		},
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]12-29PM
+
+signed in headers..
+
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-token: Pw4LflJM_bZJ9Vlizv_asQ
+token-type: Bearer
+client: ln5YipXoiV5WACpFGlUTqg
+expiry: 1483550669
+uid: dgleba@gmail.com
+content-type: application/json; charset=utf-8
+etag: W/"21368cd0b0f06fed5022a300f5d12799"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: 2c157bf6-53c5-479b-9e09-a33b3650c56a
+x-runtime: 0.424463
+server: WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+date: Wed, 21 Dec 2016 17:24:29 GMT
+content-length: 213
+connection: Keep-Alive
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]12-56PM
+
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-token: PkTx9KTDhtjazUczyr-9Ug
+token-type: Bearer
+client: _Ylmo6tuPAyL19x_0s8LwA
+expiry: 1483552377
+uid: dgleba@gmail.com
+content-type: application/json; charset=utf-8
+etag: W/"21368cd0b0f06fed5022a300f5d12799"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: dfc1cde4-7324-4b0d-8ec4-e8be25cc3cff
+x-runtime: 0.643519
+server: WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+date: Wed, 21 Dec 2016 17:52:57 GMT
+content-length: 213
+connection: Keep-Alive
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]13-08PM
+
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-token: 6asj1iT7gMNd5qhxcYqM6A
+token-type: Bearer
+client: 0R9SqqEUMwDYYB09be2uCw
+expiry: 1483553123
+uid: dgleba@gmail.com
+content-type: application/json; charset=utf-8
+etag: W/"21368cd0b0f06fed5022a300f5d12799"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: 1caf03ad-41ea-4335-bbd2-5bbcee2668e0
+x-runtime: 0.715197
+server: WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+date: Wed, 21 Dec 2016 18:05:23 GMT
+content-length: 213
+connection: Keep-Alive
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  .
+-----------------------2016-12-21[Dec-Wed]13-15PM
+
+Works!!
+
+
+http://pmdsdata4:3003/demo/members_only
+
+source..
+
+{
+	"data": {
+		"message": "Welcome dgleba@gmail.com",
+		"user": {
+			"id": 3,
+			"email": "dgleba@gmail.com",
+			"reset_password_redirect_url": null,
+			"confirm_success_url": null,
+			"name": null,
+			"nickname": null,
+			"image": null,
+			"provider": "email",
+			"uid": "dgleba@gmail.com",
+			"created_at": "2016-12-21T17:24:21.373Z",
+			"updated_at": "2016-12-21T18:05:23.904Z",
+			"favorite_color": null
+		}
+	}
+}
+
+headers..
+
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-token: 6asj1iT7gMNd5qhxcYqM6A
+token-type: Bearer
+client: 0R9SqqEUMwDYYB09be2uCw
+expiry: 1483553123
+uid: dgleba@gmail.com
+content-type: application/json; charset=utf-8
+etag: W/"5ddc243f8be89e8b75ebd9901bfaf5d0"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: 3378b3a4-41ef-4ccc-bad9-851849fb79e5
+x-runtime: 0.008117
+server: WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+date: Wed, 21 Dec 2016 18:12:08 GMT
+content-length: 339
+connection: Keep-Alive
+set-cookie: _devise_token_auth_demo_session=YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2; path=/; HttpOnly
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

@@ -1,0 +1,8 @@
+rails g cancan:ability
+++ rails g cancan:ability
+/home/albe/share203/rail314-dta-again/dtademo1/config/initializers/figaro.rb:1:in `<top (required)>': private method `require' called for Figaro:Module
+Did you mean?  require_keys (NoMethodError)
+	from /home/albe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `load'
+	from /home/albe/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/activesupport-4.2.0/lib/active_support/dependencies.rb:268:in `block in load'
+
+  
