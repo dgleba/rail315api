@@ -1,13 +1,13 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2016-12-23T18:50:11.727Z",
+	"__export_date": "2016-12-23T19:55:55.380Z",
 	"__export_source": "insomnia.desktop.app:v4.0.9",
 	"resources": [
 		{
 			"_id": "wrk_308c1c53f9a3480da54cd539e4610914",
 			"parentId": null,
-			"modified": 1482516704149,
+			"modified": 1482519098005,
 			"created": 1482339833979,
 			"name": "b",
 			"description": "",
@@ -17,7 +17,7 @@
 		{
 			"_id": "wrk_8d71f984cdf641378841802087a237d5",
 			"parentId": null,
-			"modified": 1482516632903,
+			"modified": 1482519097920,
 			"created": 1482516632903,
 			"name": "Insomnia",
 			"description": "",
@@ -27,7 +27,7 @@
 		{
 			"_id": "env_df6ddcd834644f878f62754b2fd5583a",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704145,
+			"modified": 1482519097913,
 			"created": 1482340092888,
 			"name": "Base Environment",
 			"data": {},
@@ -36,7 +36,7 @@
 		{
 			"_id": "jar_12a2ac08953b48cfb101ff09c911dee1",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482518257847,
+			"modified": 1482522937142,
 			"created": 1482339898912,
 			"name": "Default Jar",
 			"cookies": [
@@ -53,12 +53,12 @@
 				{
 					"creation": "2016-12-23T18:27:48.034Z",
 					"key": "_devise_token_auth_demo_session",
-					"value": "anNWTS9Bekw1RFRRclBMR2RaR1hQM3NFbktpellLNE5DcnVhajJvMlJVUXdQVG1yc1dMbTdYTUM5NGxCcEkrTVc2a3FBdXE3WHRxL0RIMHNqL2xEYlRIYVVOQWIweHpPVmt0dEtWZUQvWDNvSFZQSE9VZU9ZYlRmbWxQOHdTbGY4bHUrUFA4ZmVDUUY5TzQzNGNPSzhBPT0tLTFFa3lNTmRHZkx2WGpOSWRIR3FoVkE9PQ%3D%3D--400fc11f2020dff78c44b9bef5a9e478b0589f23",
-					"domain": "rail315api-b-dgleba.c9users.io",
+					"value": "eWJiN2c4V09nbXovZnYvZkl4c05zTnV6VUdRaENBbXF5ajFnZ1J2c0gvN01Kb3RMbTd6OUNSTy92d2NRSHNYbXlaWWFncnNOTlV2SHk0T2ZyMmxvOUFoWCtTQWJhZVBvN0pCNGVaRDFOcW1WZGpqR2JFY1BraEFaNFRKdXQ2K2tTOG91Y2tBZjkyb2t2bUJVdlVicm1nPT0tLW1ZbzltYW85Q09mUDlGb1JYUTBwc1E9PQ%3D%3D--bbf4ba01e147184ce6fbbcb868f2a5e74d0f487d",
 					"path": "/",
 					"httpOnly": true,
 					"hostOnly": true,
-					"lastAccessed": "2016-12-23T18:37:35.047Z"
+					"domain": "rail315api-b-dgleba.c9users.io",
+					"lastAccessed": "2016-12-23T19:55:37.141Z"
 				}
 			],
 			"_type": "cookie_jar"
@@ -66,7 +66,7 @@
 		{
 			"_id": "req_0820d9f6a4bd414897ba8ec24b7d6d94",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704137,
+			"modified": 1482519689547,
 			"created": 1482342889960,
 			"url": "http://pmdsdata4:3003/demo/members_only",
 			"name": "314  dtademo1 get3",
@@ -94,13 +94,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925711,
+			"metaSortKey": 600,
 			"_type": "request"
 		},
 		{
 			"_id": "req_5d3f07d211da466cb25e2010f426da08",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704130,
+			"modified": 1482519689546,
 			"created": 1482342431631,
 			"url": "http://pmdsdata4:3003/demo/members_only",
 			"name": "314  dtademo1 get",
@@ -133,13 +133,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925712,
+			"metaSortKey": 300,
 			"_type": "request"
 		},
 		{
 			"_id": "req_9a23da6d283840f98340335f81cd145c",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704123,
+			"modified": 1482519689546,
 			"created": 1482339925714,
 			"url": "http://pmdsdata4:3003/auth",
 			"name": "314 dtademo1 su",
@@ -173,13 +173,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925714,
+			"metaSortKey": 0,
 			"_type": "request"
 		},
 		{
 			"_id": "req_a40d79614d1d4527b3473b3c2e969156",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482517715987,
+			"modified": 1482519689547,
 			"created": 1482517683518,
 			"url": "https://rail315api-b-dgleba.c9users.io/products/11.json",
 			"name": "c9 315 delete",
@@ -212,13 +212,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925710,
+			"metaSortKey": 700,
 			"_type": "request"
 		},
 		{
 			"_id": "req_a9ad2d007d8f4084a234c3a24fb6272d",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704118,
+			"modified": 1482519689547,
 			"created": 1482343002629,
 			"url": "http://pmdsdata4:3003/demo/members_only",
 			"name": "314  dtademo1 get2",
@@ -251,13 +251,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925711,
+			"metaSortKey": 500,
 			"_type": "request"
 		},
 		{
 			"_id": "req_b2117bda5c5448178ea52ae7474e318f",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482516704109,
+			"modified": 1482519689546,
 			"created": 1482340896280,
 			"url": "http://pmdsdata4:3003/auth/sign_in",
 			"name": "314  dtademo1 si",
@@ -287,13 +287,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925713,
+			"metaSortKey": 100,
 			"_type": "request"
 		},
 		{
 			"_id": "req_b90b0e931f5a486fac30d769eca6ac4b",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482517665289,
+			"modified": 1482519702508,
 			"created": 1482517586689,
 			"url": "https://rail315api-b-dgleba.c9users.io/products.json",
 			"name": "c9 315 get",
@@ -326,13 +326,13 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925711,
+			"metaSortKey": 650,
 			"_type": "request"
 		},
 		{
 			"_id": "req_da65901f69e94fa98b29d1ac3015d7e1",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482518610634,
+			"modified": 1482519706733,
 			"created": 1482517509550,
 			"url": "https://rail315api-b-dgleba.c9users.io/auth/sign_in",
 			"name": "c9 315 si",
@@ -358,22 +358,42 @@
 				}
 			],
 			"authentication": {},
-			"metaSortKey": -1482339925712,
+			"metaSortKey": 625,
 			"_type": "request"
 		},
 		{
 			"_id": "env_40745ea811ce4cc58fee10da96f40424",
 			"parentId": "wrk_8d71f984cdf641378841802087a237d5",
-			"modified": 1482516665206,
+			"modified": 1482519097868,
 			"created": 1482516665206,
 			"name": "Base Environment",
 			"data": {},
 			"_type": "environment"
 		},
 		{
+			"_id": "jar_926a18e934ce4fda833fd84fb652afca",
+			"parentId": "wrk_8d71f984cdf641378841802087a237d5",
+			"modified": 1482522682030,
+			"created": 1482520350110,
+			"name": "Default Jar",
+			"cookies": [
+				{
+					"creation": "2016-12-23T19:13:28.521Z",
+					"key": "_devise_token_auth_demo_session",
+					"value": "YlM0Qlh4RTBicDNEWHRzSGdUSWxqcWN4RkJGYlBnWm5VVk8vRTcwQ0NZTjQrcHJCamloWG1pc05ZTWVYejRmMStUNC9tNGt2QVJkZ0I2Nk1aYzl2VUlsWk5zS1kyMjNsMkt1bFJBYUxyYnBaMkcwSXZ0NHJsWUt4OFBadnd5WEU3OVRhYktYV0tmZWQxUjNWWXpvWmxRPT0tLWNVMXR1Y1BHN3VkL2lwL1Z2VDlJeXc9PQ%3D%3D--306199f22cae0e67d04b52362468f9d22816e018",
+					"path": "/",
+					"httpOnly": true,
+					"hostOnly": true,
+					"domain": "v206x2016103022",
+					"lastAccessed": "2016-12-23T19:51:22.024Z"
+				}
+			],
+			"_type": "cookie_jar"
+		},
+		{
 			"_id": "fld_3ae9d220616344408ad00ba958a4b6ed",
 			"parentId": "wrk_8d71f984cdf641378841802087a237d5",
-			"modified": 1482516665271,
+			"modified": 1482519097864,
 			"created": 1482516665271,
 			"name": "206x",
 			"environment": {},
@@ -383,9 +403,9 @@
 		{
 			"_id": "req_15dd0aa306184cbfb8c5bcd4438e0651",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665242,
+			"modified": 1482520432899,
 			"created": 1482516665242,
-			"url": "http://v206x2016103022:3001/products/1.json",
+			"url": "http://v206x2016103022:3001/products/11.json",
 			"name": "http://v206x2016103022:3001/products r@e",
 			"method": "GET",
 			"body": {
@@ -410,7 +430,7 @@
 					"value": "h6bTq2USdY6RSZLwChDNPw"
 				},
 				{
-					"name": "//expiry",
+					"name": "expiry",
 					"value": "1483553123"
 				},
 				{
@@ -425,7 +445,7 @@
 		{
 			"_id": "req_55e4e02f7d73489587384bf362f99fdd",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665263,
+			"modified": 1482519097853,
 			"created": 1482516665263,
 			"url": "http://v206x2016103022:3001/demo/members_only",
 			"name": "http://v206x2016103022:3001/demo/members_only",
@@ -465,9 +485,52 @@
 			"_type": "request"
 		},
 		{
+			"_id": "req_5899936c4a6547399d7319578f42e6a0",
+			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
+			"modified": 1482521994374,
+			"created": 1482521978117,
+			"url": "http://v206x2016103022:3001/products/11.json",
+			"name": "http://v206x2016103022:3001/products dg (del)",
+			"method": "DELETE",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "UB251ttGcc0idne669kcFQ"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "client",
+					"value": "6qUueztmVRNRBa0MMgPPUA"
+				},
+				{
+					"name": "expiry",
+					"value": "1483553123",
+					"disabled": true
+				},
+				{
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482516665240,
+			"_type": "request"
+		},
+		{
 			"_id": "req_5d60eaf1c9ff434e83b67b6120fe31f0",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665246,
+			"modified": 1482519097846,
 			"created": 1482516665246,
 			"url": "http://v206x2016103022:3001/auth/sign_in",
 			"name": "http://v206x2016103022:3001   signin",
@@ -496,9 +559,51 @@
 			"_type": "request"
 		},
 		{
+			"_id": "req_61d606e3c1b644afafa96161a9b3253d",
+			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
+			"modified": 1482520570410,
+			"created": 1482520446228,
+			"url": "http://v206x2016103022:3001/products/11.json",
+			"name": "http://v206x2016103022:3001/products r@e del",
+			"method": "DELETE",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "COioMJ5JUnbB2Klw13j9rA"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "uid",
+					"value": "r@e.com"
+				},
+				{
+					"name": "client",
+					"value": "h6bTq2USdY6RSZLwChDNPw"
+				},
+				{
+					"name": "expiry",
+					"value": "1483553123"
+				},
+				{
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482516665241,
+			"_type": "request"
+		},
+		{
 			"_id": "req_7252c44c1bfd42f2be84b1cd6b6a8604",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665267,
+			"modified": 1482519097840,
 			"created": 1482516665267,
 			"url": "http://v206x2016103022:3001/demo/members_only",
 			"name": "http://v206x2016103022:3001/auth",
@@ -540,7 +645,7 @@
 		{
 			"_id": "req_74f91711e2ee4061b4d74012dbbe6e6d",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665236,
+			"modified": 1482519097836,
 			"created": 1482516665236,
 			"url": "https://rail315api-b-dgleba.c9users.io/products.json",
 			"name": "c9 /products r@e",
@@ -582,7 +687,7 @@
 		{
 			"_id": "req_7b17ffc9fc844b3c82ad7aa6eaaf506f",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665251,
+			"modified": 1482519097831,
 			"created": 1482516665251,
 			"url": "http://v206x2016103022:3001/products/2.json",
 			"name": "http://v206x2016103022:3001/products delete",
@@ -622,9 +727,88 @@
 			"_type": "request"
 		},
 		{
+			"_id": "req_a1cc1f0892e4424bb57f88c114312c66",
+			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
+			"modified": 1482521969454,
+			"created": 1482521851957,
+			"url": "http://v206x2016103022:3001/auth/sign_in",
+			"name": "http://v206x2016103022:3001   signin dg",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"type": "text",
+						"name": "email",
+						"disabled": false,
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"type": "text",
+						"name": "password",
+						"disabled": false,
+						"value": "dgleba@gmail.com"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "",
+					"value": ""
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482516665245,
+			"_type": "request"
+		},
+		{
+			"_id": "req_ea47255451ad4b358f2b3852ca40ec4e",
+			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
+			"modified": 1482522680216,
+			"created": 1482521896151,
+			"url": "http://v206x2016103022:3001/products.json",
+			"name": "http://v206x2016103022:3001/products dg",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "UB251ttGcc0idne669kcFQ"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "client",
+					"value": "6qUueztmVRNRBa0MMgPPUA"
+				},
+				{
+					"name": "expiry",
+					"value": "1483553123",
+					"disabled": true
+				},
+				{
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482516665241,
+			"_type": "request"
+		},
+		{
 			"_id": "req_f3fbd963bad24d8da027c349566d457d",
 			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
-			"modified": 1482516665259,
+			"modified": 1482519097824,
 			"created": 1482516665259,
 			"url": "http://v206x2016103022:3001/products.json",
 			"name": "http://v206x2016103022:3001/products",
@@ -661,6 +845,41 @@
 			],
 			"authentication": {},
 			"metaSortKey": -1482516665259,
+			"_type": "request"
+		},
+		{
+			"_id": "req_f779f1199cfd4d85904b5b4ea9e08430",
+			"parentId": "fld_3ae9d220616344408ad00ba958a4b6ed",
+			"modified": 1482521830580,
+			"created": 1482521783645,
+			"url": "http://v206x2016103022:3001/auth",
+			"name": "http://v206x2016103022:3001   signup",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"type": "text",
+						"name": "email",
+						"disabled": false,
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"type": "text",
+						"name": "password",
+						"disabled": false,
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "passwordConfirmation",
+						"value": "dgleba@gmail.com"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [],
+			"authentication": {},
+			"metaSortKey": -1482516665245,
 			"_type": "request"
 		}
 	]

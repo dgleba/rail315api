@@ -1,3 +1,4 @@
+
 Started DELETE "/products/11.json" for 108.168.7.195 at 2016-12-23 18:37:42 +0000
   ActiveRecord::SchemaMigration Load (0.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
 Processing by ProductsController#destroy as JSON
@@ -7,3 +8,23 @@ Can't verify CSRF token authenticity
   User Load (0.2ms)  SELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT 1  [["uid", "dgleba@gmail.com"]]
   Role Load (0.2ms)  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 7]]
 Completed 403 Forbidden in 484ms (ActiveRecord: 1.7ms)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+ans.
+
+https://github.com/lynndylanhurley/devise_token_auth/issues/398
+
+51koichi commented on Aug 23 • edited
+Add 「skip_before_filter :verify_authenticity_token」 to "application_controller.rb"
+My case is NG「protect_from_forgery with: :null_session」
+
+class ApplicationController < ActionController::Base
+      include DeviseTokenAuth::Concerns::SetUserByToken
+      before_filter :configure_permitted_parameters, if: :devise_controller?
+      # protect_from_forgery with: :null_session
+      skip_before_filter :verify_authenticity_token
+end 
+Have a good day!

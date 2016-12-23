@@ -15,7 +15,7 @@ class Ability
 
     elsif user.lr_regular?
       can :read, [ Role, User]
-      can [ :index, :show,  ], [ Product ]
+      can [ :index, :show, :destroy, ], [ Product ]
       
     elsif user.lr_readonly?
       can :read, Role
