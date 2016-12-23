@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2016-12-23T18:33:11.515Z",
+	"__export_date": "2016-12-23T18:50:11.727Z",
 	"__export_source": "insomnia.desktop.app:v4.0.9",
 	"resources": [
 		{
@@ -36,7 +36,7 @@
 		{
 			"_id": "jar_12a2ac08953b48cfb101ff09c911dee1",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482517856919,
+			"modified": 1482518257847,
 			"created": 1482339898912,
 			"name": "Default Jar",
 			"cookies": [
@@ -58,7 +58,7 @@
 					"path": "/",
 					"httpOnly": true,
 					"hostOnly": true,
-					"lastAccessed": "2016-12-23T18:30:56.733Z"
+					"lastAccessed": "2016-12-23T18:37:35.047Z"
 				}
 			],
 			"_type": "cookie_jar"
@@ -332,7 +332,7 @@
 		{
 			"_id": "req_da65901f69e94fa98b29d1ac3015d7e1",
 			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
-			"modified": 1482517543423,
+			"modified": 1482518610634,
 			"created": 1482517509550,
 			"url": "https://rail315api-b-dgleba.c9users.io/auth/sign_in",
 			"name": "c9 315 si",
@@ -347,10 +347,6 @@
 					{
 						"name": "password",
 						"value": "dgleba@gmail.com"
-					},
-					{
-						"name": "",
-						"value": ""
 					}
 				]
 			},
