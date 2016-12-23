@@ -1,4 +1,18 @@
-# Devise Token Auth Demo
+
+# Features
+
+  - devise token auth
+  - cancancan
+  
+
+  David Gleba dgleba@gmail.com  
+  
+
+# Based on..
+
+## Devise Token Auth Demo  2016-12-22
+
+https://github.com/lynndylanhurley/devise_token_auth_demo
 
 This is a rails application fully configured to work with the [devise token auth](https://github.com/lynndylanhurley/devise_token_auth) gem.
 
