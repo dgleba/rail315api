@@ -1,0 +1,89 @@
+
+
+https://rail315api-b-dgleba.c9users.io
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . su
+-----------------------2016-12-23[Dec-Fri]13-15PM
+
+curl --request POST \
+  --url http://pmdsdata4:3003/auth \
+  --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
+  --cookie _devise_token_auth_demo_session=YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2 \
+  --form email=dgleba@gmail.com \
+  --form password=dgleba@gmail.com \
+  --form passwordConfirmation=dgleba@gmail.com \
+  --form confirm_success_url=/users
+  
+  
+  
+curl --request POST \
+  --url https://rail315api-b-dgleba.c9users.io/auth \
+  --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
+  --cookie _devise_token_auth_demo_session=YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2 \
+  --form email=dgleba@gmail.com \
+  --form name=dg \
+  --form password=dgleba@gmail.com \
+  --form passwordConfirmation=dgleba@gmail.com \
+  --form confirm_success_url=/users  
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . sign_in
+-----------------------2016-12-23[Dec-Fri]13-22PM
+
+curl --request POST \
+  --url https://rail315api-b-dgleba.c9users.io/auth/sign_in \
+  --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
+  --cookie _devise_token_auth_demo_session=YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2 \
+  --form email=dgleba@gmail.com \
+  --form password=dgleba@gmail.com \
+  --form =
+
+  
+David@redwe MINGW64 /c/var/share203/rail315/rail315api (master)
+$ curl --request POST \
+  --form password=dgleba@gmail.com \
+>   --url https://rail315api-b-dgleba.c9users.io/auth/sign_in \
+>   --header 'content-type: multipart/form-data; boundary=---011000010111000001101001' \
+>   --cookie _devise_token_auth_demo_session=YzlLZlppOGNheUhWcU1nNHovcHNRbVlETWxZS0hqTXp2YVVWeHBEZHhzN3FMTU5qRTR1SG9mZFlCQ2FiYlF6eEJIMWgzVk1ZNHBFa3I2Ulg3MU5VZmJacnpoUTBFSXQvL2tZa1lwNGFDSXZlWHZxRDZKWU9CcWxDQzJiYXk1QVRWVW5qVVM2M1JiUUc4Y1FWSVFTTnhnPT0tLWpwV0JEbkpTZWdLTDFBZ3FPWWtUTVE9PQ%3D%3D--a14cf80d2029e6dac1d012b0678baf287dcc22c2 \
+>   --form email=dgleba@gmail.com \
+>   --form password=dgleba@gmail.com \
+>   --form =
+
+
+Warning: Illegally formatted input field!
+curl: option --form: is badly used here
+curl: try 'curl --help' or 'curl --manual' for more information
+
+David@redwe MINGW64 /c/var/share203/rail315/rail315api (master)
+
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+====================================================
+Title:
+2016-Dec-23_Fri_01:26:10 PM 
+__________________
+
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+access-token: j6suQKm6uRiLvoU0GBAjqg
+token-type: Bearer
+client: 6sfk15D-xf552_tkBuvt3g
+expiry: 1483727153
+uid: dgleba@gmail.com
+content-type: application/json; charset=utf-8
+etag: W/"5dbad72bf4124cf32ca44b1f02ade6d4"
+cache-control: max-age=0, private, must-revalidate
+x-request-id: aa327b06-2af9-4d31-aea9-2fe8e3b64938
+x-runtime: 0.199836
+vary: Origin
+server: WEBrick/1.3.1 (Ruby/2.3.0/2015-12-25)
+date: Fri, 23 Dec 2016 18:25:53 GMT
+content-length: 225
+x-backend: apps-proxy
+
+====================================================
