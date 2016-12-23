@@ -1,12 +1,20 @@
 
-# Features
+# Rails315api project
 
-  - devise token auth
-  - cancancan
-  
+  https://github.com/dgleba/rail315api.git  
 
   David Gleba dgleba@gmail.com  
   
+
+
+## Features
+
+  - api template app for rails 4
+  - devise token auth
+  - cancancan
+  - kaminari ransack pagination search is added, but still needs help to work - incomplete
+  
+
 
 # Based on..
 

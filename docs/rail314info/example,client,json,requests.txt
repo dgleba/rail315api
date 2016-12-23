@@ -1,0 +1,246 @@
+
+example requests...
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . sign_up
+-----------------------2016-12-23[Dec-Fri]11-35AM
+
+		{
+			"_id": "req_9a23da6d283840f98340335f81cd145c",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341461428,
+			"created": 1482339925714,
+			"url": "http://pmdsdata4:3003/auth",
+			"name": "314 dtademo1 su",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "passwordConfirmation",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "confirm_success_url",
+						"value": "/users"
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925714,
+			"_type": "request"
+		},
+
+  
+    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . sign_in
+-----------------------2016-12-23[Dec-Fri]11-36AM
+
+		{
+			"_id": "req_b2117bda5c5448178ea52ae7474e318f",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482341467096,
+			"created": 1482340896280,
+			"url": "http://pmdsdata4:3003/auth/sign_in",
+			"name": "314  dtademo1 si",
+			"method": "POST",
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"name": "email",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "password",
+						"value": "dgleba@gmail.com"
+					},
+					{
+						"name": "",
+						"value": ""
+					}
+				]
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925713,
+			"_type": "request"
+		}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . index and delete
+-----------------------2016-12-23[Dec-Fri]11-37AM
+
+		{
+			"name": "http://v206x2016103022:3001/products",
+			"request": {
+				"url": "http://v206x2016103022:3001/products.json",
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://v206x2016103022:3001/products delete",
+			"request": {
+				"url": "http://v206x2016103022:3001/products/2.json",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "6asj1iT7gMNd5qhxcYqM6A",
+						"description": ""
+					},
+					{
+						"key": "token-type",
+						"value": "Bearer",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "dgleba@gmail.com",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "0R9SqqEUMwDYYB09be2uCw",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1483553123",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Title:  . get
+-----------------------2016-12-23[Dec-Fri]11-35AM
+    
+		{
+			"_id": "req_5d3f07d211da466cb25e2010f426da08",
+			"parentId": "wrk_308c1c53f9a3480da54cd539e4610914",
+			"modified": 1482344081171,
+			"created": 1482342431631,
+			"url": "http://pmdsdata4:3003/demo/members_only",
+			"name": "314  dtademo1 get",
+			"method": "GET",
+			"body": {
+				"text": ""
+			},
+			"parameters": [],
+			"headers": [
+				{
+					"name": "access-token",
+					"value": "6asj1iT7gMNd5qhxcYqM6A"
+				},
+				{
+					"name": "token-type",
+					"value": "Bearer"
+				},
+				{
+					"name": "expiry",
+					"value": "1483553123",
+					"disabled": true
+				},
+				{
+					"name": "uid",
+					"value": "dgleba@gmail.com"
+				},
+				{
+					"name": "client",
+					"value": "0R9SqqEUMwDYYB09be2uCw"
+				}
+			],
+			"authentication": {},
+			"metaSortKey": -1482339925712,
+			"_type": "request"
+		},    
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   
+ 
