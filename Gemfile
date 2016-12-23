@@ -58,3 +58,5 @@ gem 'faker'
 gem 'populator'
 gem 'thor', '0.19.1'
 # 
+gem 'kaminari'
+gem 'ransack'
