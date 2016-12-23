@@ -1,9 +1,9 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
-  #cancancan
-  load_and_authorize_resource
- 
+ before_action :authenticate_user!
+ #cancancan
+ load_and_authorize_resource
+
   # GET /products
   # GET /products.json
   def index
